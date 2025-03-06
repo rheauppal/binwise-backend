@@ -1,0 +1,35 @@
+Express.js – for handling API routes
+CORS – to allow frontend requests
+Dotenv – for managing environment variables
+Multer – for handling image uploads
+OpenAI API – for text-based classification
+Firebase Admin SDK – for Firestore database integration (if using Firebase)
+pg (PostgreSQL) – if using PostgreSQL as a database instead
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBJaBn5k6CaT8p4IEIWMuUgbDpH6KdWOac",
+  authDomain: "binwise-backend.firebaseapp.com",
+  projectId: "binwise-backend",
+  storageBucket: "binwise-backend.firebasestorage.app",
+  messagingSenderId: "664555892828",
+  appId: "1:664555892828:web:7f46f923f5e91e166e7699",
+  measurementId: "G-893S9XCVCV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+
+Project Console: https://console.firebase.google.com/project/binwise-backend/overview
+Hosting URL: https://binwise-backend.web.app
