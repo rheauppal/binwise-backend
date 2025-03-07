@@ -17,7 +17,11 @@ app.use(express.json());  // Enable JSON parsing
 console.log("🚀 Initializing server...");
 
 const cors = require("cors");
-app.use(cors({ origin: "http://localhost:3000", methods: ["POST"] }));
+
+app.use(cors({
+    origin: "https://binwise-frontend.vercel.app", // Replace with your deployed frontend URL
+    methods: "GET,POST",
+}));
 
 // API Routes
 app.use("/api/classify", classifyRoute);
