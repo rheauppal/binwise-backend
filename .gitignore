@@ -8,5 +8,3 @@ venv
 uploads/
 firebase-admin-sdk.json
 package-lock.json
-# Machine learning models (large files)
-yolov8n.pt
